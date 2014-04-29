@@ -17384,6 +17384,239 @@ DIN A4, landscape with location and doc. field</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="powerpoles">
+<description>Anderson Powerpole footprints</description>
+<packages>
+<package name="POWERPOLE_PAIR_45A_HOLE">
+<pad name="RED" x="-3.95" y="-1.15" drill="5.4" shape="long" rot="R90"/>
+<pad name="BLACK" x="3.95" y="-1.15" drill="5.4" shape="long" rot="R90"/>
+<wire x1="-7.9" y1="3.95" x2="-7.9" y2="-3.95" width="0.127" layer="21"/>
+<wire x1="-7.9" y1="-3.95" x2="0" y2="-3.95" width="0.127" layer="21"/>
+<wire x1="0" y1="-3.95" x2="7.9" y2="-3.95" width="0.127" layer="21"/>
+<wire x1="7.9" y1="-3.95" x2="7.9" y2="3.95" width="0.127" layer="21"/>
+<wire x1="7.9" y1="3.95" x2="0" y2="3.95" width="0.127" layer="21"/>
+<text x="-10.16" y="2.54" size="2.54" layer="21" font="vector">+</text>
+<wire x1="0" y1="3.95" x2="-7.9" y2="3.95" width="0.127" layer="21"/>
+<wire x1="0" y1="-3.95" x2="0" y2="3.95" width="0.127" layer="21"/>
+</package>
+<package name="POWERPOLE_PAIR_45A_HORIZ_HOLE">
+<pad name="RED" x="-3.95" y="-3.4" drill="5.4" shape="long" rot="R90"/>
+<pad name="BLACK" x="3.95" y="-3.4" drill="5.4" shape="long" rot="R90"/>
+<wire x1="-7.9" y1="24.6" x2="-7.9" y2="16.4" width="0.127" layer="21"/>
+<wire x1="-7.9" y1="16.4" x2="-7.9" y2="15.97" width="0.127" layer="21"/>
+<wire x1="-7.9" y1="13.43" x2="-7.9" y2="0" width="0.127" layer="21"/>
+<wire x1="-7.9" y1="0" x2="0" y2="0" width="0.127" layer="21"/>
+<wire x1="0" y1="0" x2="7.9" y2="0" width="0.127" layer="21"/>
+<wire x1="7.9" y1="0" x2="7.9" y2="13.43" width="0.127" layer="21"/>
+<wire x1="7.9" y1="15.97" x2="7.9" y2="16.4" width="0.127" layer="21"/>
+<wire x1="7.9" y1="16.4" x2="7.9" y2="24.6" width="0.127" layer="21"/>
+<wire x1="7.9" y1="24.6" x2="0" y2="24.6" width="0.127" layer="21"/>
+<text x="-10.16" y="0" size="2.54" layer="21" font="vector">+</text>
+<wire x1="0" y1="24.6" x2="-7.9" y2="24.6" width="0.127" layer="21"/>
+<wire x1="0" y1="0" x2="0" y2="13.43" width="0.127" layer="21"/>
+<wire x1="0" y1="15.97" x2="0" y2="24.6" width="0.127" layer="21"/>
+<circle x="0" y="14.7" radius="1.27" width="0.127" layer="21"/>
+<wire x1="-7.9" y1="15.97" x2="-7.9" y2="13.43" width="0.127" layer="21" curve="-180"/>
+<wire x1="7.9" y1="15.97" x2="7.9" y2="13.43" width="0.127" layer="21" curve="180"/>
+<wire x1="-7.9" y1="16.4" x2="7.9" y2="16.4" width="0.127" layer="21"/>
+</package>
+<package name="POWERPOLE_PAIR_10AWG">
+<pad name="RED" x="-3.9" y="0" drill="2.8"/>
+<pad name="BLACK" x="3.9" y="0" drill="2.8"/>
+<wire x1="-7.9" y1="3.95" x2="0" y2="3.95" width="0.127" layer="21"/>
+<wire x1="0" y1="3.95" x2="7.9" y2="3.95" width="0.127" layer="21"/>
+<wire x1="7.9" y1="3.95" x2="7.9" y2="-3.95" width="0.127" layer="21"/>
+<wire x1="7.9" y1="-3.95" x2="0" y2="-3.95" width="0.127" layer="21"/>
+<wire x1="0" y1="-3.95" x2="-7.9" y2="-3.95" width="0.127" layer="21"/>
+<wire x1="-7.9" y1="-3.95" x2="-7.9" y2="3.95" width="0.127" layer="21"/>
+<wire x1="0" y1="3.95" x2="0" y2="-3.95" width="0.127" layer="21"/>
+<text x="-10.16" y="2.54" size="2.54" layer="21" font="vector" ratio="15">+</text>
+</package>
+<package name="POWERPOLE_PAIR_25A">
+<pad name="RED" x="-3.95" y="-0.85" drill="1.8" shape="long" rot="R90"/>
+<pad name="BLACK" x="3.95" y="-0.85" drill="1.8" shape="long" rot="R90"/>
+<wire x1="-7.9" y1="3.95" x2="-7.9" y2="-3.95" width="0.127" layer="21"/>
+<wire x1="-7.9" y1="-3.95" x2="0" y2="-3.95" width="0.127" layer="21"/>
+<wire x1="0" y1="-3.95" x2="7.9" y2="-3.95" width="0.127" layer="21"/>
+<wire x1="7.9" y1="-3.95" x2="7.9" y2="3.95" width="0.127" layer="21"/>
+<wire x1="7.9" y1="3.95" x2="0" y2="3.95" width="0.127" layer="21"/>
+<text x="-10.16" y="2.54" size="2.54" layer="21" font="vector">+</text>
+<wire x1="0" y1="3.95" x2="-7.9" y2="3.95" width="0.127" layer="21"/>
+<wire x1="0" y1="-3.95" x2="0" y2="3.95" width="0.127" layer="21"/>
+</package>
+<package name="POWERPOLE_PAIR_25A_HORIZ_G2">
+<pad name="BLACK" x="-3.95" y="-7.1" drill="1.8" shape="long" rot="R90"/>
+<pad name="RED" x="3.95" y="-7.1" drill="1.8" shape="long" rot="R90"/>
+<wire x1="-7.9" y1="24.6" x2="-7.9" y2="16.4" width="0.127" layer="21"/>
+<wire x1="-7.9" y1="16.4" x2="-7.9" y2="15.97" width="0.127" layer="21"/>
+<wire x1="-7.9" y1="13.43" x2="-7.9" y2="0" width="0.127" layer="21"/>
+<wire x1="-7.9" y1="0" x2="0" y2="0" width="0.127" layer="21"/>
+<wire x1="0" y1="0" x2="7.9" y2="0" width="0.127" layer="21"/>
+<wire x1="7.9" y1="0" x2="7.9" y2="13.43" width="0.127" layer="21"/>
+<wire x1="7.9" y1="15.97" x2="7.9" y2="16.4" width="0.127" layer="21"/>
+<wire x1="7.9" y1="16.4" x2="7.9" y2="24.6" width="0.127" layer="21"/>
+<wire x1="7.9" y1="24.6" x2="0" y2="24.6" width="0.127" layer="21"/>
+<text x="8.89" y="0" size="2.54" layer="21" font="vector">+</text>
+<wire x1="0" y1="24.6" x2="-7.9" y2="24.6" width="0.127" layer="21"/>
+<wire x1="0" y1="0" x2="0" y2="13.43" width="0.127" layer="21"/>
+<wire x1="0" y1="15.97" x2="0" y2="24.6" width="0.127" layer="21"/>
+<circle x="0" y="14.7" radius="1.27" width="0.127" layer="21"/>
+<wire x1="-7.9" y1="15.97" x2="-7.9" y2="13.43" width="0.127" layer="21" curve="-180"/>
+<wire x1="7.9" y1="15.97" x2="7.9" y2="13.43" width="0.127" layer="21" curve="180"/>
+<wire x1="-7.9" y1="16.4" x2="7.9" y2="16.4" width="0.127" layer="21"/>
+</package>
+<package name="POWERPOLE_PAIR_55A_HORIZ_MINI">
+<text x="6.35" y="2.54" size="1.27" layer="21">red</text>
+<pad name="BLACK2" x="-2.48" y="0" drill="2.6"/>
+<pad name="BLACK4" x="-2.48" y="-6.1" drill="2.6"/>
+<pad name="BLACK3" x="-13.4" y="-6.1" drill="2.6"/>
+<pad name="BLACK1" x="-13.4" y="0" drill="2.6"/>
+<pad name="RED1" x="2.48" y="0" drill="2.6"/>
+<pad name="RED3" x="2.48" y="-6.1" drill="2.6"/>
+<pad name="RED4" x="13.4" y="-6.1" drill="2.6"/>
+<pad name="RED2" x="13.4" y="0" drill="2.6"/>
+<wire x1="-12.7" y1="17.78" x2="12.7" y2="17.78" width="0.127" layer="21"/>
+<wire x1="-12.7" y1="24.89" x2="12.7" y2="24.89" width="0.127" layer="21"/>
+<rectangle x1="-16.51" y1="-8.89" x2="16.51" y2="25.4" layer="39"/>
+</package>
+<package name="POWERPOLE_PAIR_55A_HORIZ">
+<circle x="0" y="29.8" radius="2.4" width="0.127" layer="21"/>
+<wire x1="-15.7" y1="32.2" x2="-15.7" y2="27.4" width="0.127" layer="21" curve="-180"/>
+<wire x1="15.7" y1="32.2" x2="15.7" y2="27.4" width="0.127" layer="21" curve="180"/>
+<wire x1="0" y1="0" x2="-15.7" y2="0" width="0.127" layer="21"/>
+<wire x1="-15.7" y1="0" x2="-15.7" y2="27.4" width="0.127" layer="21"/>
+<wire x1="0" y1="0" x2="0" y2="27.4" width="0.127" layer="21"/>
+<wire x1="0" y1="0" x2="15.7" y2="0" width="0.127" layer="21"/>
+<wire x1="15.7" y1="0" x2="15.7" y2="27.4" width="0.127" layer="21"/>
+<wire x1="15.7" y1="32.2" x2="15.7" y2="33.3" width="0.127" layer="21"/>
+<wire x1="15.7" y1="33.3" x2="15.7" y2="48" width="0.127" layer="21"/>
+<wire x1="15.7" y1="48" x2="0" y2="48" width="0.127" layer="21"/>
+<wire x1="0" y1="48" x2="-15.7" y2="48" width="0.127" layer="21"/>
+<wire x1="-15.7" y1="48" x2="-15.7" y2="33.3" width="0.127" layer="21"/>
+<wire x1="-15.7" y1="33.3" x2="-15.7" y2="32.2" width="0.127" layer="21"/>
+<wire x1="0" y1="32.2" x2="0" y2="48" width="0.127" layer="21"/>
+<wire x1="-15.7" y1="33.3" x2="15.7" y2="33.3" width="0.127" layer="21"/>
+<pad name="RED1" x="-4.51" y="-5.76" drill="2.54"/>
+<pad name="RED2" x="-11.37" y="-10.84" drill="2.6"/>
+<pad name="RED3" x="-4.51" y="-15.92" drill="2.6"/>
+<pad name="BLACK1" x="11.19" y="-5.76" drill="2.6"/>
+<pad name="BLACK2" x="4.33" y="-10.84" drill="2.6"/>
+<pad name="BLACK3" x="11.19" y="-15.92" drill="2.6"/>
+</package>
+<package name="POWERPOLE_PAIR_55A">
+<pad name="BLACK4" x="-2.79" y="0" drill="2.6"/>
+<pad name="BLACK3" x="-13.08" y="0" drill="2.6"/>
+<pad name="BLACK1" x="-13.08" y="4.98" drill="2.6"/>
+<pad name="BLACK2" x="-2.79" y="4.98" drill="2.6"/>
+<pad name="RED1" x="2.79" y="4.98" drill="2.6"/>
+<pad name="RED3" x="2.79" y="0" drill="2.6"/>
+<pad name="RED4" x="13.08" y="0" drill="2.6"/>
+<pad name="RED2" x="13.08" y="4.98" drill="2.6"/>
+<text x="7.62" y="-3.81" size="1.27" layer="21">red</text>
+<wire x1="-17.25" y1="8.44" x2="-17.25" y2="-2.76" width="0.127" layer="21"/>
+<wire x1="-17.25" y1="-2.76" x2="-16" y2="-2.76" width="0.127" layer="21"/>
+<wire x1="-16" y1="-2.76" x2="-16" y2="-8.26" width="0.127" layer="21"/>
+<wire x1="-16" y1="-8.26" x2="16" y2="-8.26" width="0.127" layer="21"/>
+<wire x1="16" y1="-8.26" x2="16" y2="-2.76" width="0.127" layer="21"/>
+<wire x1="16" y1="-2.76" x2="17.25" y2="-2.76" width="0.127" layer="21"/>
+<wire x1="17.25" y1="-2.76" x2="17.25" y2="8.44" width="0.127" layer="21"/>
+<wire x1="17.25" y1="8.44" x2="-17.25" y2="8.44" width="0.127" layer="21"/>
+</package>
+</packages>
+<symbols>
+<symbol name="POWERPOLE_POWER">
+<wire x1="-5.08" y1="10.16" x2="-5.08" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-10.16" x2="5.08" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-10.16" x2="5.08" y2="10.16" width="0.254" layer="94"/>
+<wire x1="5.08" y1="10.16" x2="-5.08" y2="10.16" width="0.254" layer="94"/>
+<pin name="V+" x="-10.16" y="5.08" length="middle" direction="pwr"/>
+<pin name="GND" x="-10.16" y="-5.08" length="middle" direction="pwr"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="POWERPOLE_POWER" prefix="J">
+<description>Anderson Powerpole Power Connector 
+using ameteur radio standard layout</description>
+<gates>
+<gate name="G$1" symbol="POWERPOLE_POWER" x="0" y="0"/>
+</gates>
+<devices>
+<device name="45A_DRILL" package="POWERPOLE_PAIR_45A_HOLE">
+<connects>
+<connect gate="G$1" pin="GND" pad="BLACK"/>
+<connect gate="G$1" pin="V+" pad="RED"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="45A_HORIZONTAL_DRILL" package="POWERPOLE_PAIR_45A_HORIZ_HOLE">
+<connects>
+<connect gate="G$1" pin="GND" pad="BLACK"/>
+<connect gate="G$1" pin="V+" pad="RED"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="10AWG" package="POWERPOLE_PAIR_10AWG">
+<connects>
+<connect gate="G$1" pin="GND" pad="BLACK"/>
+<connect gate="G$1" pin="V+" pad="RED"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="25A" package="POWERPOLE_PAIR_25A">
+<connects>
+<connect gate="G$1" pin="GND" pad="BLACK"/>
+<connect gate="G$1" pin="V+" pad="RED"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="25A_HORIZONTAL_G2" package="POWERPOLE_PAIR_25A_HORIZ_G2">
+<connects>
+<connect gate="G$1" pin="GND" pad="BLACK"/>
+<connect gate="G$1" pin="V+" pad="RED"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="55A_HORIZONTAL_MINI" package="POWERPOLE_PAIR_55A_HORIZ_MINI">
+<connects>
+<connect gate="G$1" pin="GND" pad="BLACK1 BLACK2 BLACK3 BLACK4"/>
+<connect gate="G$1" pin="V+" pad="RED1 RED2 RED3 RED4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="55A_HORIZONTAL" package="POWERPOLE_PAIR_55A_HORIZ">
+<connects>
+<connect gate="G$1" pin="GND" pad="BLACK1 BLACK2 BLACK3"/>
+<connect gate="G$1" pin="V+" pad="RED1 RED2 RED3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="55A" package="POWERPOLE_PAIR_55A">
+<connects>
+<connect gate="G$1" pin="GND" pad="BLACK1 BLACK2 BLACK3 BLACK4"/>
+<connect gate="G$1" pin="V+" pad="RED1 RED2 RED3 RED4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -17432,6 +17665,8 @@ DIN A4, landscape with location and doc. field</description>
 <part name="GND" library="testpad" deviceset="TP" device="B1,27" value="5V B"/>
 <part name="FRAME1" library="frames" deviceset="A4L-LOC" device=""/>
 <part name="J3" library="farnell-parts" deviceset="2-PIN-MOLEX" device="" value="12v"/>
+<part name="J6" library="powerpoles" deviceset="POWERPOLE_POWER" device="10AWG"/>
+<part name="J7" library="powerpoles" deviceset="POWERPOLE_POWER" device="10AWG"/>
 </parts>
 <sheets>
 <sheet>
@@ -17501,6 +17736,8 @@ DIN A4, landscape with location and doc. field</description>
 <attribute name="NAME" x="83.82" y="110.49" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="78.74" y="117.475" size="1.778" layer="96"/>
 </instance>
+<instance part="J6" gate="G$1" x="200.66" y="76.2"/>
+<instance part="J7" gate="G$1" x="76.2" y="129.54" rot="MR0"/>
 </instances>
 <busses>
 </busses>
@@ -17559,6 +17796,8 @@ DIN A4, landscape with location and doc. field</description>
 <wire x1="195.58" y1="38.1" x2="190.5" y2="38.1" width="0.1524" layer="91"/>
 <wire x1="190.5" y1="38.1" x2="190.5" y2="58.42" width="0.1524" layer="91"/>
 <junction x="190.5" y="58.42"/>
+<pinref part="J6" gate="G$1" pin="GND"/>
+<wire x1="190.5" y1="71.12" x2="190.5" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="J5" gate="G$1" pin="1"/>
@@ -17569,9 +17808,14 @@ DIN A4, landscape with location and doc. field</description>
 <pinref part="GND3" gate="1" pin="GND"/>
 <pinref part="C6" gate="G$1" pin="-"/>
 <pinref part="J3" gate="G$1" pin="1"/>
-<wire x1="109.22" y1="106.68" x2="86.36" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="106.68" x2="88.9" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="106.68" x2="86.36" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="86.36" y1="106.68" x2="86.36" y2="111.76" width="0.1524" layer="91"/>
 <junction x="109.22" y="106.68"/>
+<pinref part="J7" gate="G$1" pin="GND"/>
+<wire x1="86.36" y1="124.46" x2="88.9" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="124.46" x2="88.9" y2="106.68" width="0.1524" layer="91"/>
+<junction x="88.9" y="106.68"/>
 </segment>
 </net>
 <net name="VCC_HP2_SW" class="0">
@@ -17591,7 +17835,8 @@ DIN A4, landscape with location and doc. field</description>
 <net name="5V" class="0">
 <segment>
 <wire x1="157.48" y1="60.96" x2="167.64" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="167.64" y1="60.96" x2="193.04" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="60.96" x2="185.42" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="185.42" y1="60.96" x2="193.04" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="193.04" y1="60.96" x2="195.58" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="149.86" y1="60.96" x2="157.48" y2="60.96" width="0.1524" layer="91"/>
 <junction x="167.64" y="60.96"/>
@@ -17605,6 +17850,10 @@ DIN A4, landscape with location and doc. field</description>
 <wire x1="195.58" y1="45.72" x2="193.04" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="193.04" y1="45.72" x2="193.04" y2="60.96" width="0.1524" layer="91"/>
 <junction x="193.04" y="60.96"/>
+<pinref part="J6" gate="G$1" pin="V+"/>
+<wire x1="190.5" y1="81.28" x2="185.42" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="185.42" y1="81.28" x2="185.42" y2="60.96" width="0.1524" layer="91"/>
+<junction x="185.42" y="60.96"/>
 </segment>
 <segment>
 <wire x1="203.2" y1="127" x2="203.2" y2="139.7" width="0.1524" layer="91"/>
@@ -17673,8 +17922,8 @@ DIN A4, landscape with location and doc. field</description>
 <pinref part="Q1" gate="N" pin="G"/>
 <pinref part="R4" gate="G$1" pin="2"/>
 <pinref part="J2" gate="G$1" pin="2"/>
-<wire x1="20.32" y1="71.12" x2="38.1" y2="71.12" width="0.1524" layer="91"/>
 <junction x="38.1" y="71.12"/>
+<wire x1="20.32" y1="71.12" x2="38.1" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$25" class="0">
@@ -17743,6 +17992,10 @@ DIN A4, landscape with location and doc. field</description>
 <pinref part="J3" gate="G$1" pin="2"/>
 <pinref part="D1" gate="G$1" pin="A"/>
 <wire x1="86.36" y1="114.3" x2="91.44" y2="114.3" width="0.1524" layer="91"/>
+<pinref part="J7" gate="G$1" pin="V+"/>
+<wire x1="86.36" y1="134.62" x2="91.44" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="134.62" x2="91.44" y2="114.3" width="0.1524" layer="91"/>
+<junction x="91.44" y="114.3"/>
 </segment>
 </net>
 </nets>
