@@ -17665,8 +17665,8 @@ using ameteur radio standard layout</description>
 <part name="GND" library="testpad" deviceset="TP" device="B1,27" value="5V B"/>
 <part name="FRAME1" library="frames" deviceset="A4L-LOC" device=""/>
 <part name="J3" library="farnell-parts" deviceset="2-PIN-MOLEX" device="" value="12v"/>
-<part name="J6" library="powerpoles" deviceset="POWERPOLE_POWER" device="10AWG"/>
-<part name="J7" library="powerpoles" deviceset="POWERPOLE_POWER" device="10AWG"/>
+<part name="J6" library="powerpoles" deviceset="POWERPOLE_POWER" device="25A" value="POWERPOLE_POWER25A"/>
+<part name="J7" library="powerpoles" deviceset="POWERPOLE_POWER" device="25A" value="POWERPOLE_POWER25A"/>
 </parts>
 <sheets>
 <sheet>
