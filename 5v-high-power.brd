@@ -875,16 +875,16 @@ design rules under a new name.</description>
 <contactref element="J5" pad="1"/>
 <contactref element="C6" pad="-"/>
 <polygon width="1.016" layer="16">
-<vertex x="-12.7" y="127"/>
-<vertex x="181.61" y="127"/>
-<vertex x="181.61" y="-25.4"/>
-<vertex x="-12.7" y="-25.4"/>
+<vertex x="5.842" y="71.882"/>
+<vertex x="131.826" y="78.232"/>
+<vertex x="129.794" y="22.098"/>
+<vertex x="12.7" y="20.32"/>
 </polygon>
 <polygon width="1.016" layer="1">
-<vertex x="-7.62" y="123.19"/>
-<vertex x="173.99" y="123.19"/>
-<vertex x="173.99" y="-19.05"/>
-<vertex x="-7.62" y="-19.05"/>
+<vertex x="13.208" y="68.58"/>
+<vertex x="121.666" y="73.152"/>
+<vertex x="122.428" y="27.178"/>
+<vertex x="17.78" y="26.162"/>
 </polygon>
 <contactref element="GND" pad="TP"/>
 <via x="76.2" y="38.1" extent="1-16" drill="0.6" shape="octagon"/>
