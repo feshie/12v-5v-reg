@@ -140,7 +140,7 @@
 <hole x="21.59" y="37.465" drill="3.2"/>
 <hole x="3.175" y="3.175" drill="3.2"/>
 <text x="24.13" y="37.465" size="1.27" layer="51">5V Low Power</text>
-<text x="2.54" y="6.35" size="1.778" layer="51" rot="R90">V0.1</text>
+<text x="2.54" y="6.35" size="1.778" layer="51" rot="R90">V0.2</text>
 <text x="2.54" y="14.605" size="1.778" layer="51" rot="R90">PJB</text>
 <text x="53.975" y="38.1" size="1.778" layer="51">250mA</text>
 </plain>

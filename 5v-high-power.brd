@@ -137,7 +137,7 @@
 <wire x1="114.915" y1="66.98" x2="22.21" y2="66.98" width="0" layer="20"/>
 <wire x1="22.21" y1="66.98" x2="22.21" y2="32.385" width="0" layer="20"/>
 <text x="84.455" y="64.77" size="1.4224" layer="51">Switched 5V</text>
-<text x="85.09" y="62.865" size="1.4224" layer="51">Version 0.2</text>
+<text x="85.09" y="62.865" size="1.4224" layer="51">Version 0.3</text>
 <text x="88.265" y="33.02" size="1.4224" layer="51">PJB</text>
 <text x="25.4" y="35.306" size="1.778" layer="51" rot="R90">2Amp</text>
 </plain>
