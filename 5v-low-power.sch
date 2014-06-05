@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.4">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -6010,21 +6010,6 @@ DIN A3, landscape with location and doc. field</description>
 <text x="-4.2926" y="-4.1656" size="2.0828" layer="25" ratio="10" rot="SR0">&gt;NAME</text>
 <text x="-3.4544" y="-0.635" size="1.27" layer="27" ratio="6" rot="SR0">&gt;VALUE</text>
 </package>
-<package name="1048">
-<wire x1="5" y1="1.6" x2="5" y2="-1.6" width="0.127" layer="21"/>
-<wire x1="1.6" y1="-5" x2="-1.6" y2="-5" width="0.127" layer="21"/>
-<wire x1="-5" y1="-1.6" x2="-5" y2="1.6" width="0.127" layer="21"/>
-<wire x1="-1.6" y1="5" x2="1.6" y2="5" width="0.127" layer="21"/>
-<wire x1="5" y1="1.6" x2="1.6" y2="5" width="0.127" layer="21"/>
-<wire x1="1.6" y1="-5" x2="5" y2="-1.6" width="0.127" layer="21"/>
-<wire x1="-1.6" y1="-5" x2="-5" y2="-1.6" width="0.127" layer="21"/>
-<wire x1="-5" y1="1.6" x2="-1.6" y2="5" width="0.127" layer="21"/>
-<circle x="0" y="0" radius="3.5" width="0.127" layer="51"/>
-<smd name="1" x="-4.5" y="0" dx="3.6" dy="1.8" layer="1" rot="R90"/>
-<smd name="2" x="4.5" y="0" dx="3.6" dy="1.8" layer="1" rot="R90"/>
-<text x="-3.4" y="5.3" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-3.6" y="-6.6" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-</package>
 <package name="2-MOLEX">
 <wire x1="-2.54" y1="2.54" x2="2.54" y2="2.54" width="0.127" layer="21"/>
 <wire x1="2.54" y1="2.54" x2="2.54" y2="-1.778" width="0.127" layer="21"/>
@@ -6072,15 +6057,6 @@ DIN A3, landscape with location and doc. field</description>
 <pin name="!SHDN" x="-17.78" y="-7.62" length="middle" direction="in"/>
 <pin name="GND" x="0" y="-20.32" length="middle" direction="pas" rot="R90"/>
 <pin name="SW" x="17.78" y="2.54" length="middle" direction="out" rot="R180"/>
-</symbol>
-<symbol name="INDUCTOR">
-<wire x1="5.08" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
-<wire x1="-5.08" y1="0" x2="-2.54" y2="0" width="0.1524" layer="94"/>
-<text x="-2.54" y="2.54" size="1.778" layer="95">&gt;NAME</text>
-<text x="-2.54" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
-<rectangle x1="-1.016" y1="-3.556" x2="1.016" y2="3.556" layer="94" rot="R90"/>
-<pin name="P$1" x="-7.62" y="0" visible="off" length="short"/>
-<pin name="P$2" x="7.62" y="0" visible="off" length="short" rot="R180"/>
 </symbol>
 <symbol name="J2">
 <wire x1="0" y1="0" x2="0" y2="1.27" width="0.1524" layer="94"/>
@@ -6130,22 +6106,6 @@ DIN A3, landscape with location and doc. field</description>
 <attribute name="PACKAGE" value="TSOT-23-6" constant="no"/>
 <attribute name="SUPPLIER" value="Linear Technology" constant="no"/>
 </technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="SRU1048" prefix="L" uservalue="yes">
-<gates>
-<gate name="A" symbol="INDUCTOR" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="1048">
-<connects>
-<connect gate="A" pin="P$1" pad="1"/>
-<connect gate="A" pin="P$2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -17667,6 +17627,64 @@ using ameteur radio standard layout</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="inductors">
+<description>&lt;b&gt;Inductors and Filters&lt;/b&gt;&lt;p&gt;
+Based on the previous library ind-a.lbr&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="DR127">
+<description>&lt;b&gt;High Power Density, High Efficiency, Shielded Inductors&lt;/b&gt;&lt;p&gt;
+Source: coiltronics_dr_series.pdf</description>
+<wire x1="-6.5" y1="6.5" x2="6.525" y2="6.5" width="0.2032" layer="21"/>
+<wire x1="6.525" y1="6.5" x2="6.525" y2="-6.5" width="0.2032" layer="21"/>
+<wire x1="6.525" y1="-6.5" x2="-6.5" y2="-6.5" width="0.2032" layer="21"/>
+<wire x1="-6.5" y1="-6.5" x2="-6.5" y2="6.5" width="0.2032" layer="21"/>
+<wire x1="-4.5254" y1="3.783" x2="-3.8006" y2="4.5431" width="1.016" layer="21" curve="-202.065586" cap="flat"/>
+<wire x1="-3.783" y1="-4.5254" x2="-4.5431" y2="-3.8006" width="1.016" layer="21" curve="-202.065586" cap="flat"/>
+<wire x1="4.5254" y1="-3.783" x2="3.8006" y2="-4.5431" width="1.016" layer="21" curve="-202.065586" cap="flat"/>
+<wire x1="3.783" y1="4.5254" x2="4.5431" y2="3.8006" width="1.016" layer="21" curve="-202.065586" cap="flat"/>
+<wire x1="0" y1="5.9" x2="4.9" y2="3.275" width="0.2032" layer="21" curve="-56.209779"/>
+<wire x1="0" y1="5.9" x2="-4.95" y2="3.225" width="0.2032" layer="21" curve="56.95663"/>
+<wire x1="0" y1="-5.9" x2="-4.9" y2="-3.275" width="0.2032" layer="21" curve="-56.209779"/>
+<wire x1="0" y1="-5.9" x2="4.95" y2="-3.225" width="0.2032" layer="21" curve="56.95663"/>
+<circle x="0" y="0" radius="5.9" width="0.2032" layer="51"/>
+<smd name="1" x="-4.975" y="0" dx="3.85" dy="5.5" layer="1"/>
+<smd name="2" x="4.975" y="0" dx="3.85" dy="5.5" layer="1"/>
+<text x="-2.5" y="3" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3" y="-4.5" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+</packages>
+<symbols>
+<symbol name="DRK">
+<wire x1="-3.81" y1="1.651" x2="3.81" y2="1.651" width="0.254" layer="94"/>
+<text x="-3.81" y="2.286" size="1.778" layer="95">&gt;NAME</text>
+<text x="-3.937" y="-3.048" size="1.778" layer="96">&gt;VALUE</text>
+<rectangle x1="-3.81" y1="-0.889" x2="3.81" y2="0.889" layer="94"/>
+<pin name="2" x="7.62" y="0" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="1" x="-7.62" y="0" visible="pad" length="middle" direction="pas" swaplevel="1"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="DR127" prefix="L">
+<description>&lt;b&gt;High Power Density, High Efficiency, Shielded Inductors&lt;/b&gt;&lt;p&gt;
+Source: coiltronics_dr_series.pdf</description>
+<gates>
+<gate name="G$1" symbol="DRK" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="DR127">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -17685,7 +17703,7 @@ using ameteur radio standard layout</description>
 <part name="R18" library="resistor" deviceset="R-EU_" device="R0805" value="332K"/>
 <part name="R17" library="resistor" deviceset="R-EU_" device="R0805" value="1M"/>
 <part name="C21" library="resistor" deviceset="C-EU" device="C0805" value="10pF"/>
-<part name="L2" library="farnell-parts" deviceset="SRU1048" device="" value="68uH"/>
+<part name="L2" library="inductors" deviceset="DR127" device="" value="68uH"/>
 <part name="C23" library="rcl" deviceset="CPOL-EU" device="E" value="68uF"/>
 <part name="D3" library="diode" deviceset="MBR0520LT" device="" value="MBR0540"/>
 <part name="L3" library="rcl" deviceset="L-EU" device="6000-XXX-RC" value="20uH"/>
@@ -17741,7 +17759,7 @@ using ameteur radio standard layout</description>
 <instance part="R18" gate="G$1" x="177.8" y="144.78" rot="R90"/>
 <instance part="R17" gate="G$1" x="177.8" y="157.48" rot="R90"/>
 <instance part="C21" gate="G$1" x="167.64" y="157.48"/>
-<instance part="L2" gate="A" x="172.72" y="167.64"/>
+<instance part="L2" gate="G$1" x="172.72" y="167.64"/>
 <instance part="C23" gate="G$1" x="185.42" y="144.78"/>
 <instance part="D3" gate="G$1" x="172.72" y="175.26" smashed="yes" rot="R180">
 <attribute name="NAME" x="170.18" y="178.2826" size="1.778" layer="95"/>
@@ -17924,7 +17942,7 @@ using ameteur radio standard layout</description>
 <pinref part="U1" gate="A" pin="SW"/>
 <pinref part="C20" gate="G$1" pin="2"/>
 <pinref part="D2" gate="G$1" pin="C"/>
-<pinref part="L2" gate="A" pin="P$1"/>
+<pinref part="L2" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$117" class="0">
@@ -17968,7 +17986,7 @@ using ameteur radio standard layout</description>
 <junction x="185.42" y="152.4"/>
 <pinref part="C23" gate="G$1" pin="+"/>
 <pinref part="D3" gate="G$1" pin="A"/>
-<pinref part="L2" gate="A" pin="P$2"/>
+<pinref part="L2" gate="G$1" pin="2"/>
 <pinref part="R17" gate="G$1" pin="2"/>
 <pinref part="C21" gate="G$1" pin="1"/>
 <pinref part="L3" gate="G$1" pin="1"/>
