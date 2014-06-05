@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="25" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mm"/>
+<grid distance="5" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -270,6 +270,21 @@ chip</description>
 <rectangle x1="0.4064" y1="-0.6985" x2="1.0564" y2="0.7015" layer="51"/>
 <rectangle x1="-1.0668" y1="-0.6985" x2="-0.4168" y2="0.7015" layer="51"/>
 <rectangle x1="-0.1999" y1="-0.5001" x2="0.1999" y2="0.5001" layer="35"/>
+</package>
+<package name="B/3528-21R">
+<description>&lt;b&gt;Chip Capacitor Type KEMET B / EIA 3528-21 Reflow solder&lt;/b&gt;&lt;p&gt;
+KEMET T / EIA 3528-12</description>
+<wire x1="-1.6" y1="1.2" x2="1.6" y2="1.2" width="0.1016" layer="51"/>
+<wire x1="1.6" y1="1.2" x2="1.6" y2="-1.2" width="0.1016" layer="51"/>
+<wire x1="1.6" y1="-1.2" x2="-1.6" y2="-1.2" width="0.1016" layer="51"/>
+<wire x1="-1.6" y1="-1.2" x2="-1.6" y2="1.2" width="0.1016" layer="51"/>
+<smd name="+" x="1.525" y="0" dx="1.95" dy="2.5" layer="1"/>
+<smd name="-" x="-1.525" y="0" dx="1.95" dy="2.5" layer="1"/>
+<text x="-1.95" y="1.6" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.95" y="-2.925" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-1.75" y1="-0.6" x2="-1.625" y2="0.6" layer="51"/>
+<rectangle x1="1.625" y1="-0.6" x2="1.75" y2="0.6" layer="51"/>
+<rectangle x1="0.95" y1="-1.225" x2="1.25" y2="1.225" layer="51"/>
 </package>
 </packages>
 </library>
@@ -802,9 +817,9 @@ design rules under a new name.</description>
 <element name="D3" library="diode" package="SOD123" value="MBR0540" x="33.655" y="31.115" smashed="yes" rot="R90">
 <attribute name="NAME" x="36.465" y="30.015" size="1.27" layer="25" rot="R90"/>
 </element>
-<element name="L3" library="rcl" package="6000-XXXX-RC" value="20uH" x="48.895" y="23.495" smashed="yes">
-<attribute name="NAME" x="48.1994" y="25.5876" size="1.27" layer="25"/>
-<attribute name="VALUE" x="46.9294" y="20.2594" size="1.27" layer="27"/>
+<element name="L3" library="rcl" package="6000-XXXX-RC" value="20uH" x="49.022" y="22.606" smashed="yes">
+<attribute name="NAME" x="48.3264" y="24.6986" size="1.27" layer="25"/>
+<attribute name="VALUE" x="47.0564" y="19.3704" size="1.27" layer="27"/>
 </element>
 <element name="C25" library="rcl" package="E5-8,5" value="330uF" x="54.61" y="36.195" smashed="yes" rot="R90">
 <attribute name="NAME" x="52.324" y="35.2552" size="1.27" layer="25" ratio="10" rot="R90"/>
@@ -862,6 +877,11 @@ design rules under a new name.</description>
 <element name="SJ1" library="jumper" package="SJ" value="" x="58.42" y="8.89" rot="MR90"/>
 <element name="SJ2" library="jumper" package="SJ" value="" x="61.595" y="8.89" rot="MR90"/>
 <element name="SJ3" library="jumper" package="SJ" value="" x="50.165" y="8.89" rot="MR90"/>
+<element name="C1" library="resistor" package="C0805" value="" x="52.324" y="29.591" rot="R90"/>
+<element name="C2" library="resistor" package="B/3528-21R" value="" x="57.15" y="26.797" smashed="yes" rot="R270">
+<attribute name="NAME" x="54.432" y="27.35" size="1.27" layer="25" rot="R270"/>
+<attribute name="VALUE" x="54.225" y="28.747" size="1.27" layer="27" rot="R270"/>
+</element>
 </elements>
 <signals>
 <signal name="GND">
@@ -877,16 +897,16 @@ design rules under a new name.</description>
 <contactref element="J3" pad="1"/>
 <contactref element="J7" pad="BLACK"/>
 <polygon width="0.6096" layer="16">
-<vertex x="-8.89" y="120.015"/>
-<vertex x="172.72" y="120.015"/>
-<vertex x="172.72" y="-29.845"/>
-<vertex x="-8.89" y="-29.845"/>
+<vertex x="-8.255" y="55.88"/>
+<vertex x="83.185" y="51.435"/>
+<vertex x="80.645" y="-5.08"/>
+<vertex x="-6.985" y="-5.08"/>
 </polygon>
 <polygon width="0.6096" layer="1">
-<vertex x="-3.81" y="113.665"/>
-<vertex x="167.64" y="113.665"/>
-<vertex x="167.64" y="-22.225"/>
-<vertex x="-3.81" y="-22.225"/>
+<vertex x="-3.175" y="48.895"/>
+<vertex x="73.66" y="48.895"/>
+<vertex x="73.025" y="-2.54"/>
+<vertex x="-4.445" y="-2.54"/>
 </polygon>
 <contactref element="C19" pad="2"/>
 <contactref element="C23" pad="-"/>
@@ -900,6 +920,9 @@ design rules under a new name.</description>
 <contactref element="U$1" pad="P2.4"/>
 <contactref element="U$1" pad="P3.4"/>
 <via x="60.96" y="2.54" extent="1-16" drill="0.6"/>
+<contactref element="C2" pad="-"/>
+<contactref element="C1" pad="2"/>
+<via x="28.702" y="32.639" extent="1-16" drill="0.4826"/>
 </signal>
 <signal name="VCC">
 <contactref element="Q1" pad="3"/>
@@ -977,7 +1000,7 @@ design rules under a new name.</description>
 <wire x1="48.155" y1="33.655" x2="42.545" y2="33.655" width="1.016" layer="1"/>
 <wire x1="41.1" y1="22.225" x2="42.545" y2="22.225" width="1.016" layer="1"/>
 <wire x1="42.545" y1="22.225" x2="46.395" y2="22.225" width="1.016" layer="1"/>
-<wire x1="46.395" y1="22.225" x2="46.395" y2="23.495" width="1.016" layer="1"/>
+<wire x1="46.395" y1="22.225" x2="46.522" y2="22.606" width="1.016" layer="1"/>
 </signal>
 <signal name="VCC_HP2_SW">
 <contactref element="F1" pad="1"/>
@@ -1002,26 +1025,35 @@ design rules under a new name.</description>
 <contactref element="5V" pad="TP"/>
 <contactref element="J4" pad="2"/>
 <contactref element="J6" pad="RED"/>
-<wire x1="51.395" y1="23.495" x2="54.61" y2="23.495" width="1.016" layer="1"/>
-<wire x1="54.61" y1="23.495" x2="54.61" y2="33.655" width="1.016" layer="1"/>
+<wire x1="54.61" y1="22.606" x2="54.61" y2="25.272" width="1.016" layer="1"/>
+<wire x1="54.61" y1="25.272" x2="54.61" y2="28.956" width="1.016" layer="1"/>
+<wire x1="54.61" y1="28.956" x2="54.61" y2="33.655" width="1.016" layer="1"/>
 <wire x1="42.291" y1="15.24" x2="42.545" y2="15.24" width="1.016" layer="1"/>
 <wire x1="42.545" y1="15.24" x2="42.505" y2="19.05" width="1.016" layer="1"/>
 <wire x1="42.505" y1="19.05" x2="51.395" y2="19.05" width="1.016" layer="1"/>
-<wire x1="51.395" y1="19.05" x2="51.395" y2="23.495" width="1.016" layer="1"/>
 <wire x1="46.99" y1="9.74" x2="49.53" y2="9.74" width="0.8128" layer="1"/>
 <wire x1="49.53" y1="9.74" x2="49.53" y2="9.525" width="0.6096" layer="1"/>
-<wire x1="55.88" y1="19.05" x2="51.395" y2="19.05" width="0.6096" layer="1"/>
+<wire x1="55.88" y1="19.05" x2="51.562" y2="19.05" width="0.6096" layer="1"/>
 <contactref element="U$1" pad="P1.1"/>
 <contactref element="U$1" pad="P2.1"/>
 <contactref element="U$1" pad="P3.1"/>
+<wire x1="51.562" y1="19.05" x2="51.395" y2="19.05" width="0.6096" layer="1"/>
 <wire x1="42.545" y1="15.24" x2="46.99" y2="15.24" width="0.8128" layer="1"/>
 <wire x1="46.99" y1="15.24" x2="46.99" y2="9.74" width="0.8128" layer="1"/>
 <wire x1="63.745" y1="5.39" x2="55.245" y2="5.39" width="0.8128" layer="1"/>
 <wire x1="55.245" y1="5.39" x2="52.545" y2="5.39" width="0.8128" layer="1"/>
 <wire x1="52.545" y1="5.39" x2="49.53" y2="5.39" width="0.8128" layer="1"/>
 <wire x1="49.53" y1="5.39" x2="49.53" y2="9.525" width="0.8128" layer="1"/>
-<wire x1="63.715" y1="22.085" x2="51.395" y2="22.085" width="1.016" layer="1"/>
-<wire x1="51.395" y1="22.085" x2="51.395" y2="23.495" width="0.8128" layer="1"/>
+<contactref element="C2" pad="+"/>
+<contactref element="C1" pad="1"/>
+<wire x1="57.15" y1="25.272" x2="54.61" y2="25.272" width="1.016" layer="1"/>
+<wire x1="52.324" y1="28.741" x2="54.395" y2="28.741" width="1.016" layer="1"/>
+<wire x1="54.395" y1="28.741" x2="54.61" y2="28.956" width="1.016" layer="1"/>
+<wire x1="51.522" y1="22.606" x2="51.562" y2="22.606" width="1.016" layer="1"/>
+<wire x1="51.562" y1="22.606" x2="54.61" y2="22.606" width="1.016" layer="1"/>
+<wire x1="63.715" y1="22.085" x2="54.61" y2="22.085" width="1.016" layer="1"/>
+<wire x1="54.61" y1="22.085" x2="54.61" y2="22.606" width="1.016" layer="1"/>
+<wire x1="51.562" y1="22.606" x2="51.562" y2="19.05" width="1.016" layer="1"/>
 </signal>
 <signal name="LEDGND1">
 <contactref element="LED2" pad="C"/>
